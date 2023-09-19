@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc72484-7d99-4ac4-86ed-e4a954d10fb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/model/Flashcard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nisbeterik/flashx/model/FlashcardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,9 +144,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JUnit.FlashcardTest" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="Application.FlashXApp" />
       </list>
     </recent_temporary>
@@ -163,7 +162,7 @@
       <workItem from="1692361995227" duration="364000" />
       <workItem from="1692363926661" duration="607000" />
       <workItem from="1692524409986" duration="5067000" />
-      <workItem from="1695133238791" duration="4461000" />
+      <workItem from="1695133238791" duration="5141000" />
     </task>
     <servers />
   </component>
