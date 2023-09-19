@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc72484-7d99-4ac4-86ed-e4a954d10fb8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/model/Flashcard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nisbeterik/flashx/model/FlashcardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flashx/FlashXApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/FlashXApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flashx/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/flashx/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nisbeterik/flashx/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/flashx/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nisbeterik/flashx/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="Maven.FlashX [clean,package,assembly:assembly...]">
     <configuration name="FlashXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.flashx.FlashXApp" />
       <module name="FlashX" />
@@ -88,6 +84,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.nisbeterik.flashx" />
       <option name="MAIN_CLASS_NAME" value="com.nisbeterik.flashx.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlashcardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlashX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nisbeterik.flashx.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nisbeterik.flashx.model" />
+      <option name="MAIN_CLASS_NAME" value="com.nisbeterik.flashx.model.FlashcardTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,10 +140,12 @@
       <item itemvalue="Application.FlashXApp" />
       <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       <item itemvalue="JUnit.AppTest" />
+      <item itemvalue="JUnit.FlashcardTest" />
       <item itemvalue="Maven.FlashX [clean,package,assembly:assembly...]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FlashcardTest" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="Application.FlashXApp" />
@@ -150,7 +163,7 @@
       <workItem from="1692361995227" duration="364000" />
       <workItem from="1692363926661" duration="607000" />
       <workItem from="1692524409986" duration="5067000" />
-      <workItem from="1695133238791" duration="715000" />
+      <workItem from="1695133238791" duration="4461000" />
     </task>
     <servers />
   </component>
