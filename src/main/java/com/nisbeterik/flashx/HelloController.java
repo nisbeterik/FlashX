@@ -1,4 +1,4 @@
-package com.example.flashx;
+package com.nisbeterik.flashx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
