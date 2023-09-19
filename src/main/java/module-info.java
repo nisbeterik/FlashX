@@ -3,6 +3,6 @@ module com.example.flashx {
     requires javafx.fxml;
             
                             
-    opens com.example.flashx to javafx.fxml;
-    exports com.example.flashx;
+    opens com.nisbeterik.flashx to javafx.fxml;
+    exports com.nisbeterik.flashx;
 }
