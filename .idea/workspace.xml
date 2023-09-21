@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc72484-7d99-4ac4-86ed-e4a954d10fb8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/model/Deck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nisbeterik/flashx/model/DeckTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,31 +60,43 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Maven.FlashX [clean,package,assembly:assembly...]">
-    <configuration name="FlashXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flashx.FlashXApp" />
+  <component name="RunManager" selected="JUnit.DeckTest (1)">
+    <configuration name="DeckTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlashX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flashx.*" />
+          <option name="PATTERN" value="com.nisbeterik.flashx.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.nisbeterik.flashx.model" />
+      <option name="MAIN_CLASS_NAME" value="com.nisbeterik.flashx.model.DeckTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlashX" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DeckTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeckTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlashX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nisbeterik.flashx.*" />
+          <option name="PATTERN" value="com.nisbeterik.flashx.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.nisbeterik.flashx" />
-      <option name="MAIN_CLASS_NAME" value="com.nisbeterik.flashx.AppTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.nisbeterik.flashx.model" />
+      <option name="MAIN_CLASS_NAME" value="com.nisbeterik.flashx.model.DeckTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,18 +149,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.FlashXApp" />
       <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
-      <item itemvalue="JUnit.AppTest" />
+      <item itemvalue="JUnit.DeckTest" />
+      <item itemvalue="JUnit.DeckTest (1)" />
+      <item itemvalue="JUnit.DeckTest.testToString" />
       <item itemvalue="JUnit.FlashcardTest" />
       <item itemvalue="Maven.FlashX [clean,package,assembly:assembly...]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+        <item itemvalue="JUnit.DeckTest (1)" />
+        <item itemvalue="JUnit.DeckTest" />
+        <item itemvalue="JUnit.DeckTest.testToString" />
         <item itemvalue="JUnit.FlashcardTest" />
-        <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="Application.FlashXApp" />
+        <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +178,7 @@
       <workItem from="1692363926661" duration="607000" />
       <workItem from="1692524409986" duration="5067000" />
       <workItem from="1695133238791" duration="5141000" />
+      <workItem from="1695294927074" duration="5441000" />
     </task>
     <servers />
   </component>
