@@ -4,21 +4,27 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Deck extends StudyComponent {
+public class Folder extends StudyComponent {
 
     private List<StudyComponent> components;
 
-    public Deck(String title, String description) {
-        super(title, description);
+    public Folder(String title) {
+        super(title);
         this.components = new ArrayList<>();
-    }
-
-    public Deck(String title) {
-        this(title, "");
     }
 
     public List<StudyComponent> getComponents() {
         return Collections.unmodifiableList(components);
+    }
+
+    public int getNumOfDecks() {
+        int count = 0;
+        for (StudyComponent component : components) {
+            if (component instanceof Deck) {
+                count++;
+            }
+        }
+        return count;
     }
 
     @Override
@@ -32,10 +38,10 @@ public class Deck extends StudyComponent {
 
     @Override
     public void add(StudyComponent component) {
-        if (component instanceof Flashcard) {
+        if (component instanceof Deck) {
             components.add(component);
         } else {
-            throw new IllegalArgumentException("Deck can only contain flashcards.");
+            throw new IllegalArgumentException("Folder can only contain decks.");
         }
     }
 
@@ -46,6 +52,10 @@ public class Deck extends StudyComponent {
 
     @Override
     public String toString() {
-        return super.toString() + ", Number of Flashcards: " + getNumOfFlashcards();
+        String baseDescription = super.toString();
+        if (getDescription().isEmpty()) {
+            baseDescription = "Title: " + getTitle();
+        }
+        return baseDescription + ", Number of Decks: " + getNumOfDecks();
     }
 }

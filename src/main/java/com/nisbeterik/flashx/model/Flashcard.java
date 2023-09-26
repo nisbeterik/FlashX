@@ -1,5 +1,7 @@
 package com.nisbeterik.flashx.model;
 
+import com.nisbeterik.flashx.utils.StringUtils;
+
 public class Flashcard extends StudyComponent {
 
     private String front;
@@ -21,14 +23,8 @@ public class Flashcard extends StudyComponent {
     }
 
     private void validateFrontAndBack(String front, String back) {
-        validateString(front, "Front of the flashcard cannot be null or empty.");
-        validateString(back, "Back of the flashcard cannot be null or empty.");
-    }
-
-    private void validateString(String value, String errorMessage) {
-        if (value == null || value.trim().isEmpty()) {
-            throw new IllegalArgumentException(errorMessage);
-        }
+        StringUtils.validateString(front, "Front of the flashcard cannot be null or empty.");
+        StringUtils.validateString(back, "Back of the flashcard cannot be null or empty.");
     }
 
     @Override

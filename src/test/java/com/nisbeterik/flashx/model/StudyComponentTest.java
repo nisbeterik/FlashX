@@ -1,9 +1,10 @@
-/*package com.nisbeterik.flashx.model;
+package com.nisbeterik.flashx.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 public class StudyComponentTest {
 
     private StudyComponent subject;
@@ -22,9 +23,8 @@ public class StudyComponentTest {
         subject.add(folder);
         folder.add(deck);
 
-
-        assertTrue(subject.getComponents().contains(folder), "Subject should contain the folder");
-        assertTrue(folder.getComponents().contains(deck), "Folder should contain the deck");
+        assertTrue(((Subject) subject).getComponents().contains(folder), "Subject should contain the folder");
+        assertTrue(((Folder) folder).getComponents().contains(deck), "Folder should contain the deck");
     }
 
     @Test
@@ -32,7 +32,7 @@ public class StudyComponentTest {
         subject.add(folder);
         subject.remove(folder);
 
-        assertFalse(subject.getComponents().contains(folder), "Subject should not contain the removed folder");
+        assertFalse(((Subject) subject).getComponents().contains(folder), "Subject should not contain the removed folder");
     }
 
     @Test
@@ -42,9 +42,9 @@ public class StudyComponentTest {
         Flashcard flashcard = new Flashcard("Question", "Answer");
         deck.add(flashcard);
 
-        assertEquals(1, subject.getComponents().size());
-        assertEquals(1, folder.getComponents().size());
-        assertEquals(1, deck.getComponents().size());
+        assertEquals(1, ((Subject) subject).getComponents().size());
+        assertEquals(1, ((Folder) folder).getComponents().size());
+        assertEquals(1, ((Deck) deck).getComponents().size());
     }
 
     @Test
@@ -52,4 +52,4 @@ public class StudyComponentTest {
         Flashcard flashcard = new Flashcard("Question", "Answer");
         assertThrows(UnsupportedOperationException.class, () -> flashcard.add(new Deck("Some Deck")));
     }
-}*/
+}

@@ -1,18 +1,21 @@
 package com.nisbeterik.flashx.model;
 
+import com.nisbeterik.flashx.utils.StringUtils;
+
 public abstract class StudyComponent {
 
     private String title;
     private String description;
 
     public StudyComponent(String title, String description) {
+        StringUtils.validateString(title, "Title cannot be null or empty.");
         this.title = title;
-        this.description = description;
+        this.description = description != null ? description : ""; //
     }
 
     public StudyComponent(String title) {
         this.title = title;
-        this.description = "";  // Setting default description as empty
+        this.description = "";
     }
 
     public String getTitle() {
