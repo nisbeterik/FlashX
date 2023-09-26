@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc72484-7d99-4ac4-86ed-e4a954d10fb8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/model/StudyComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nisbeterik/flashx/model/StudyComponentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/model/Flashcard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisbeterik/flashx/model/Flashcard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nisbeterik/flashx/model/FlashcardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nisbeterik/flashx/model/FlashcardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -157,10 +161,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DeckTest (1)" />
-        <item itemvalue="JUnit.DeckTest" />
-        <item itemvalue="JUnit.DeckTest.testToString" />
         <item itemvalue="JUnit.FlashcardTest" />
         <item itemvalue="JAR Application.FlashX-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+        <item itemvalue="JUnit.DeckTest" />
+        <item itemvalue="JUnit.DeckTest.testToString" />
       </list>
     </recent_temporary>
   </component>
@@ -177,11 +181,24 @@
       <workItem from="1692524409986" duration="5067000" />
       <workItem from="1695133238791" duration="5141000" />
       <workItem from="1695294927074" duration="6326000" />
+      <workItem from="1695749183460" duration="587000" />
+      <workItem from="1695749782162" duration="1112000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

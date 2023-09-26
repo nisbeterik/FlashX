@@ -4,50 +4,44 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Deck {
+public class Deck extends StudyComponent {
 
-    private String title;
-
-    private String description = "";
-    private List<Flashcard> flashcards;
+    private List<StudyComponent> components;
 
     public Deck(String title, String description) {
-        this.title = title;
-        this.description = description;
-        this.flashcards = new ArrayList<>();
+        super(title, description);
+        this.components = new ArrayList<>();
     }
 
     public Deck(String title) {
         this(title, "");
     }
 
-    public String getTitle() {
-        return title;
+    public List<StudyComponent> getComponents() {
+        return Collections.unmodifiableList(components);
     }
 
-    public List<Flashcard> getFlashcards() {
-        return Collections.unmodifiableList(flashcards);
-    }
-
+    @Override
     public int getNumOfFlashcards() {
-        return flashcards.size();
-    }
-    public void addFlashcard(Flashcard flashcard) {
-        this.flashcards.add(flashcard);
-    }
-
-    public void removeFlashcard(Flashcard flashcard) {
-        this.flashcards.remove(flashcard);
+        int total = 0;
+        for (StudyComponent component : components) {
+            total += component.getNumOfFlashcards();
+        }
+        return total;
     }
 
+    @Override
+    public void add(StudyComponent component) {
+        components.add(component);
+    }
 
-
-    public String getDescription() {
-        return this.description;
+    @Override
+    public void remove(StudyComponent component) {
+        components.remove(component);
     }
 
     @Override
     public String toString() {
-        return "Name: " + getTitle() + ", Description: " + getDescription() + ", Number of Flashcards: " + getNumOfFlashcards();
+        return super.toString() + ", Number of Flashcards: " + getNumOfFlashcards();
     }
 }
