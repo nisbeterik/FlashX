@@ -22,6 +22,18 @@ public class FlashcardTest {
     }
 
     @Test
+    void addFlashcardUnsupported() {
+        Flashcard flashcard = new Flashcard("Question", "Answer");
+        assertThrows(UnsupportedOperationException.class, () -> flashcard.add(new Flashcard("Another Question", "Another Answer")));
+    }
+
+    @Test
+    void removeFlashcardUnsupported() {
+        Flashcard flashcard = new Flashcard("Question", "Answer");
+        assertThrows(UnsupportedOperationException.class, () -> flashcard.remove(new Flashcard("Another Question", "Another Answer")));
+    }
+
+    @Test
     void testToString() {
         Flashcard flashcard = new Flashcard("Question", "Answer");
         String expectedString = "Front: Question, Back: Answer";
